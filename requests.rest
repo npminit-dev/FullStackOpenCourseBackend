@@ -1,0 +1,25 @@
+// get all
+GET http://localhost:3001/api/persons
+###
+// server datetime
+GET http://localhost:3001/info
+### 
+// get 1 person
+GET http://localhost:3001/api/persons/1
+### 
+// delete 1 person
+DELETE http://localhost:3001/api/persons
+content-type: application/json
+
+{
+  "id": "578155"
+}
+###
+// add 1 person
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+  "name": "Baldurrr Odin 3",
+  "number": "237-468-6548"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "fullstackopencoursebackend",
+  "version": "1.0.0",
+  "description": "FullStackOpen course exercises backend",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "npm test",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "author": "jorge",
+  "license": "ISC",
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
