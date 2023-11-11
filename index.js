@@ -2,7 +2,7 @@ import express, { json } from "express";
 import morgan from "morgan";
 import { persons as p } from "./persons.js";
 import cors from 'cors'
-
+import 'dotenv/config'
 
 let persons = [...p];
 
@@ -58,6 +58,6 @@ app.post('/api/persons', (req, res) => {
   } else res.status(400).send('No body!');
 })
 
-app.listen(process.env.PORT || 3001, () => console.log('Server listening at port 3001'))
+app.listen(process.env.PORT || 3001, () => console.log('Server listening at port ' + process.env.PORT))
 
 
