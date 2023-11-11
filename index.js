@@ -3,6 +3,7 @@ import morgan from "morgan";
 import { persons as p } from "./persons.js";
 import cors from 'cors'
 
+
 let persons = [...p];
 
 const app = express();
@@ -17,6 +18,7 @@ app.use(morgan((tokens, req, res) => {
 }, { immediate: false }));
 app.use(json());
 app.use(cors())
+app.use(express.static('build'))
 
 app.get('/info', (req, res) => {
   res.statusMessage = 'Correct!';
