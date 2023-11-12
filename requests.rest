@@ -30,8 +30,8 @@ PUT http://localhost:3001/api/persons
 Content-Type: application/json
 
 {
-  "id": "6550120c488384f7417990ef",
-  "newnumber": "123-111-33333333"
+  "id": "655074769e4242dfcf352f85",
+  "newnumber": "123-111-1111111111"
 }
 
 ###

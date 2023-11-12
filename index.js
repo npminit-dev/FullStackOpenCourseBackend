@@ -89,7 +89,8 @@ app.use((err, req, res, next) => {
         break;
       case err.error === 'ID not found!':
       default:
-         res.status(404).send(errdata)
+        console.log('%o', errdata)
+         res.status(404).send(errdata.data)
     }
   }
 })
