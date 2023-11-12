@@ -63,7 +63,7 @@ app.post('/api/persons', (req, res, next) => {
 })
 
 app.put('/api/persons', (req, res, next) => {
-  let data = req.body.data;
+  let data = req.body;
   if(data) {
     if(!data.id || !data.newnumber) next({ error: 'Incorrect body syntax!' })
     personModel.findByIdAndUpdate(data.id, { number: data.newnumber }, { returnDocument: 'after' })
