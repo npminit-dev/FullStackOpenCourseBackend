@@ -5,14 +5,14 @@ GET http://localhost:3001/api/persons
 GET http://localhost:3001/info
 ### 
 // get 1 person
-GET http://localhost:3001/api/persons/1
+GET http://localhost:3001/api/persons/654fddb76e04701d4e124b58
 ### 
 // delete 1 person
 DELETE http://localhost:3001/api/persons
 content-type: application/json
 
 {
-  "id": "578155"
+  "id": "6550133122720a31e7a270fa"
 }
 ###
 // add 1 person
@@ -20,6 +20,20 @@ POST http://localhost:3001/api/persons
 Content-Type: application/json
 
 {
-  "name": "Baldurrr Odin 3",
-  "number": "237-468-6548"
+  "name": "Sergio Perez",
+  "number": "655013cb46f79fc62d083fec"
 }
+
+###
+//modify 1 person
+PUT http://localhost:3001/api/persons
+content-type: application/json
+
+{
+  "id": "654fdd65cbefdff2f441dbde",
+  "newnumber": "123-111-22222"
+}
+
+###
+// unknown endpoint
+GET http://localhost:3001/unknown
