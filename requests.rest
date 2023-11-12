@@ -27,11 +27,11 @@ Content-Type: application/json
 ###
 //modify 1 person
 PUT http://localhost:3001/api/persons
-content-type: application/json
+Content-Type: application/json
 
 {
-  "id": "654fdd65cbefdff2f441dbde",
-  "newnumber": "123-111-22222"
+  "id": "6550120c488384f7417990ef",
+  "newnumber": "123-111-33333333"
 }
 
 ###
